@@ -1,0 +1,119 @@
+﻿<Window x:Class="WpfApp6_Store.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6_Store"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name ="MainGrid">
+        <Grid.ColumnDefinitions >
+            <ColumnDefinition Width=" 2.5*"/>
+            <ColumnDefinition Width=" 0.25*"/>
+            <ColumnDefinition Width=" *"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer Grid.Column="0" Margin="10,-10,190,10" Grid.ColumnSpan="2" >
+        
+                
+                    <WrapPanel Name ="WP">
+                  
+            <!--<StackPanel>
+                        <Button  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Stretch="Fill"  Source="https://www.bakenroll.az/en/image/coca-cola.jpg"/>
+                        </Button>
+                <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+
+            <StackPanel>
+                        <Button Background="Green"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Stretch="Fill"  Source="https://bazarstore.az/17732-home_default/milla-ayran-375-gr.jpg"/>
+                        </Button>
+                <Label Content=" maham"  Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+            <StackPanel>
+                        <Button Background="Pink"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image  Source="https://cdn.dsmcdn.com/ty201/product/media/images/20211017/17/150622744/266557882/1/1_org_zoom.jpg"/>
+                        </Button>
+                <Label Content=" maham"  Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+            <StackPanel>
+                        <Button Background="Red" Style = "{DynamicResource StyleProductBtn}">
+                            <Image  Source="https://cdn.dsmcdn.com/ty953/product/media/images/20230615/13/385779009/496224798/1/1_org_zoom.jpg"/>
+                        </Button>
+                <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+            <StackPanel>
+                        <Button Background="SkyBlue"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source="https://bazarstore.az/23764-home_default/zeytun-baglari-zeytun-yagi-750-ml-rafine.jpg"/>
+                        </Button>
+                <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+            <StackPanel>
+                        <Button Background="Brown"   Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://bazarstore.az/38-home_default/saville-makaron-linguine-500-gr.jpg"/>
+                        </Button>
+                <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+            </StackPanel>
+            <StackPanel>
+                        <Button Background="Yellow"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty690/product/media/images/20230117/16/260380302/676670014/1/1_org_zoom.jpg"/>
+                        </Button>
+                         <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                  </StackPanel>
+                  <StackPanel>
+                        <Button Background="Violet"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty913/product/media/images/20230526/18/362615524/952297698/1/1_org_zoom.jpg"/>
+                        </Button>
+                        <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                   </StackPanel>
+                   <StackPanel>
+                        <Button Background="Black"   Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty500/product/media/images/20220806/16/155477155/480412690/1/1_org_zoom.jpg"/>
+                        </Button>
+                       <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                   </StackPanel>
+                   <StackPanel>
+                        <Button Background="WhiteSmoke"   Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty29/product/media/images/20201202/20/34559427/115432407/0/0_org_zoom.jpg"/>
+                        </Button>
+                       <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                   </StackPanel>
+                   <StackPanel>
+                        <Button Background="DarkCyan"   Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty941/product/media/images/20230603/23/380179877/669092803/1/1_org_zoom.png"/>
+                        </Button>
+                       <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                   </StackPanel>
+                   <StackPanel>
+                        <Button Background="Violet"  Style = "{DynamicResource StyleProductBtn}">
+                            <Image Source=" https://cdn.dsmcdn.com/ty369/product/media/images/20220323/13/75011760/70714887/1/1_org_zoom.jpg"/>
+                        </Button>
+                       <Label Content=" maham" Style="{DynamicResource StyleNameLabel }"/>
+                    </StackPanel>-->
+
+                </WrapPanel>
+               
+        </ScrollViewer>
+
+        <!--<StackPanel Name ="Grid2_SelProd">
+            
+            
+            
+            
+        </StackPanel>-->
+
+        <StackPanel Orientation="Vertical" Margin=" 10" Grid.Column="1">
+            <Button  Background="SkyBlue" Height=" 60"  Content="Add" Click="AddProd" Margin="0 20"/>
+            <Button Grid.Column="1" Background="Blue" Height=" 60"  Content="ShowList" Click="ShowList"/>
+        </StackPanel>
+        
+
+        <StackPanel Grid.Column=" 2"  Name="STP" Orientation="Vertical" >
+            <Image Width=" 100" Height=" 100" Name="ImageProd"/>
+            <Label Width=" 100" Height=" 40" Name ="LabelProd"/>
+        </StackPanel>
+        
+        
+        
+    </Grid>
+</Window>
